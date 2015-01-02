@@ -1,0 +1,157 @@
+/* Copyright (C) 2008 App Tsunami, Inc. */
+/* 
+ *  This program is free software: you can redistribute it and/or modify 
+ *  it under the terms of the GNU General Public License as published by 
+ *  the Free Software Foundation, either version 3 of the License, or 
+ *  (at your option) any later version. 
+ * 
+ *  This program is distributed in the hope that it will be useful, 
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of 
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+ *  GNU General Public License for more details. 
+ * 
+ *  You should have received a copy of the GNU General Public License 
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>. 
+ */
+/* style.css */
+
+.topRightLinks {
+  float:right;
+}
+
+.applicationTitle {
+  font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+  font-size:10pt;
+  font-weight:bold;
+}
+
+.emphasizeLink {
+  font-weight: bold;
+  color: #ff0000;
+}
+
+div.subpanel {
+  border-bottom: 1px solid #aaaaaa;
+}
+
+table.subpanel {
+  padding:0px;
+  border-spacing:0;
+  border: 0px;
+}
+
+td.subpanel {
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  color: #aaaaaa;
+}
+
+table.hrefBar {
+  border-top: 1px solid #444400;
+  border-left: 1px solid #444400;
+  border-right: 1px solid #444400;
+  border-bottom: 1px solid #444400;
+  background-color: #f1f1f1; 
+}
+
+td.nonSelectedHrefBar {
+  font-size:11px; 
+  font-weight:bold;
+  font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+  text-align:center;
+  color:#000044;
+}
+
+td.selectedHrefBar {
+  font-size:11px; 
+  font-weight:bold;
+  font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+  text-align:center;
+  background-color:#c0c0c0;
+  text-decoration: underline;
+}
+
+pre.sourceCode{
+  margin:5px 0;
+  padding:10px;
+  text-align:left;
+  display:block;
+  overflow:auto;
+  font:10px 'Lucida Console','courier new',monospace;
+  line-height:12px;
+  white-space:pre;
+  background:#EEEEEE;
+  border:1px solid #888888;
+  max-height:1000px;
+  width:600px;
+}
+div.panelButton {
+  margin: 5px 10px 5px 10px;
+}
+span.panelButton {
+  overflow: visible;
+  width: 0;
+  margin: 0px 10px 0px 10px;
+}
+a.selectedPanelButton {
+  color:#FFFFFF;
+  background-color:#6D84B4;
+  padding:1px 18px 1px;
+}
+a.panelButton {
+  color:#6D84B4;
+  background-color:#FFFFFF;
+}
+a.selectedPanelButton,
+a.panelButton {
+  font-weight:bold;
+  font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+  font-size:11px;
+  margin:0px;
+  text-align:center;
+  white-space: nowrap;
+  border-style:none;
+  border-width:0px;
+}
+div.roundBox {
+  border-color:#D9DFEA #0E1F5B #0E1F5B #D9DFEA;
+  border-style:solid;
+  border-width:1px;
+}
+div.fbgreybox {
+  background-color:#F7F7F7;
+  border:1px solid #CCCCCC;
+  color:#333333;
+  font-size:13px;
+  font-weight:bold;
+  padding:10px;
+}
+div.fbbluebox {
+  background-color:#ECEFF6;
+  border:1px solid #D4DAE8;
+  color:#333333;
+  font-size:13px;
+  font-weight:bold;
+  padding:10px;
+}
+div.fbinfobox {
+  background-color:#FFF9D7;
+  border:1px solid #E2C822;
+  color:#333333;
+  font-size:13px;
+  font-weight:bold;
+  padding:10px;
+}
+div.fberrorbox {
+  background-color:#FFEBE8;
+  border:1px solid #DD3C10;
+  color:#333333;
+  font-size:13px;
+  font-weight:bold;
+  padding:10px;
+}
+div.publisherContent {
+  height:150px;
+  overflow:auto;
+}
