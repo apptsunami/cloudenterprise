@@ -107,7 +107,11 @@ class CecSqlInsert extends CecSqlStatement {
   public function addStringFieldValuePair($field, $value,
       $onDuplicateUpdate=self::ON_DUPLICATE_NOOP, $trimValue=true) {
     if ($trimValue && (!is_null($value))) {
-      $value = trim($value);
+      if (is_array($value)) {
+CecLogger::logError("value is an array");
+      } else {
+        $value = trim($value);
+      }
     } // if
     $this->originalValuePairArray[$field] = $value;
     $this->_addToArray($field, CecDataTable::wrapNullAndQuote($value),

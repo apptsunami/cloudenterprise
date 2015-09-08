@@ -537,7 +537,7 @@ CecLogger::logError(self::ERROR_MISSING_FIELD_NAMES.':'.get_class($this)."\n");
 
   public function fetchOneByObjid($objid, $fieldNameArray=null) {
     if (is_null($objid)) return(null);
-    $filter = $this->autoIncrementFieldName.'='.$objid;
+    $filter = $this->autoIncrementFieldName.'='.intval($objid);
     return($this->fetchOne($filter, null, $fieldNameArray));
   } // fetchOneByObjid
 
@@ -1260,7 +1260,7 @@ CecLogger::logError(self::ERROR_MISSING_FIELD_NAMES.':'.get_class($this)."\n");
 
   static public function dateAdd($startDate, $timeQuantity, $timeUnit) {
     return  self::FUNCTION_DATE_ADD.'('.$startDate.', INTERVAL '
-      .$timeUnit.' '.$timeQuantity.')';
+      .$timeQuantity.' '.$timeUnit.')';
   } // dateAdd
 
   static public function reformatSqlScriptToSqlArray($sql) {

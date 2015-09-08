@@ -48,7 +48,8 @@ class CecPortletHtml extends CecPortlet {
   const SHORT_STRING_COLUMNS = 30;
 
   const SHOW_SECRET_VALUE = true;
-  const SHOW_SECRET_CLEAR = true;
+  const SHOW_SECRET_CLEAR = false;
+  const ENABLE_AUTOCOMPLETE = false;
 
   const DEFAULT_CURRENCY_SYMBOL = '$';
   const DEFAULT_BUTTON_LABEL = "submit";
@@ -231,6 +232,9 @@ class CecPortletHtml extends CecPortlet {
   static public function renderInputPassword($name, $value, $size=null,
       $maxLength=null, $additionalAttributeArray=null) {
     $str = '<input type="password" name="'.$name.'"';
+    if (!self::ENABLE_AUTOCOMPLETE) {
+      $str .= ' autocomplete=off ';
+    } // if
     if (!is_null($value)) {
       $str .= ' value="'.htmlentities($value).'"';
     } // if
